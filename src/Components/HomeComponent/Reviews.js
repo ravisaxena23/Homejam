@@ -61,9 +61,9 @@ const Reviews = () => {
 
       {/* Cards */}
       <div class="container">
-        <div class="row">
+        <div class="row" style={{marginTop:"20px"}}>
           {Reviews.map((review) => (
-            <div class="card col-md-3 col-sm-6 col-xs-12 review-cards">
+            <div class="card col-md-3 col-sm-6 col-xs-12 review-cards"  style={{marginBottom:"10px"}}>
               <img src={review.image} class="avatar" alt="..." />
               <span class="review-name">{review.name}</span>
               <span class="review-location"><img src={review.flag} alt="flag" style={{marginRight:"10px"}}></img>{review.location}</span>
