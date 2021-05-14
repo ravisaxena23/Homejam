@@ -1,63 +1,35 @@
-.banner{
+/* HomeMaincomponent */
+
+.banner {
     min-height: 862px;
     height: auto;
     width: 100%;
-    top:-2px;
+    top: -2px;
     left: 1px;
-    background-image:
-    linear-gradient(to bottom, rgba(5, 11, 20, 0.28), rgba(1, 13, 32, 0.69),rgba(10, 11, 26, 73.26)),
-    url('../images/banner.png');
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
+    background-image: linear-gradient(to bottom, rgba(5, 11, 20, 0.28), rgba(1, 13, 32, 0.69), rgba(10, 11, 26, 73.26)), url('../images/banner.png');
+    /* background-attachment: fixed; */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.circle{
-    max-width: 208px;
-    max-height: 208px;
-    opacity: 80%;
-}
-
-.countercontainer{
-    top: 387px;
-}
-
-.countertext{
-    color: grey;
-    margin-top: 6px;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 32px;
-    font-family: "nunito";
-}
-
-.percentvalue{
+.banner-heading {
     color: #FFFFFF;
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 32px;
-    font-family: "Libre Baskerville";
-}
-
-.banner-heading{
-    color:#FFFFFF;
     font-family: "Libre Baskerville";
     text-transform: capitalize;
     font-size: 80px;
     font-weight: 700;
-    line-height: 97%;
+    line-height: 97px;
     position: relative;
-    top:246px;
-    left: 151px;
+    top: 246px;
     width: 383px;
     height: 96px;
-    justify-content: Left;
-    vertical-align: Center
+    justify-content: left;
+    vertical-align: center;
+    text-align: left;
 }
 
-.banner-content{
+.banner-content {
     font-family: "Nunito";
     font-size: 24px;
     line-height: 32px;
@@ -70,35 +42,172 @@
     width: 611px;
     height: 64px;
     top: 246px;
-    left: 180px;
     text-align: start;
 }
 
+/* Home Counter */
+
+.circle {
+    max-width: 208px;
+    max-height: 208px;
+    opacity: 80%;
+}
+
+.counter-container {
+    top: 387px;
+}
+
+.counter-text {
+    color: grey;
+    margin-top: 6px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    font-family: "nunito";
+}
+
+.percent-value {
+    color: #FFFFFF;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+    font-family: "Libre Baskerville";
+}
+
+/* upcoming shows */
+
+.upcoming-show-heading {
+    color: #FFFFFF;
+    margin-top: 124px;
+    margin-bottom: 12px;
+    height: 40px;
+    font-family: "Libre Baskerville";
+    font-weight: 400;
+    line-height: 40px;
+    font-size: 32px;
+    position: relative;
+    text-align: left;
+}
+
+.upcoming-show-heading:before {
+    position: absolute;
+    top: 1.45em;
+    width: 40px;
+    content: '';
+    border-top: 3px solid #0259EB;
+    border-radius: 16px;
+}
+
+/* 
+.upcoming-show-all-button{
+    color: #FFFFFF;
+    margin-top: 124px;
+    text-align: right;
+} */
+
+.upcoming-show-all-button {
+    margin-top: 124px !important;
+    color: #E5C558;
+    background: transparent;
+    border-width: 2px;
+    border-style: solid;
+    border-color: transparent;
+    position: relative;
+    margin: 1em;
+    display: inline-block;
+    padding: 0.5em 1em;
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+    font-family: "Nunito";
+    font-weight: 400;
+    font-size: 16px;
+    float: right;
+}
+
+.upcoming-show-all-button:before, .upcoming-show-all-button:after {
+    content: "";
+    display: block;
+    position: absolute;
+    border-color: transparent;
+    box-sizing: border-box;
+    border-style: solid;
+    width: 1em;
+    height: 1em;
+    transition: all 0.3s ease-in-out;
+}
+
+.upcoming-show-all-button:before {
+    top: -6px;
+    left: -6px;
+    border-width: 2px 0 0 2px;
+    z-index: 5;
+}
+
+.upcoming-show-all-button:after {
+    bottom: -6px;
+    right: -6px;
+    border-width: 0 2px 2px 0;
+}
+
+.upcoming-show-all-button:hover:before, .upcoming-show-all-button:hover:after {
+    width: calc(100% + 12px);
+    height: calc(100% + 12px);
+    border-color: #fff;
+}
+
+.upcoming-show-all-button:hover {
+    color: #353535;
+    background-color: #fff;
+    border-color: #fff;
+}
+
+.borderless-button.upcoming-show-all-button {
+    border-color: transparent;
+    color: #E5C558;
+}
+
+.borderless-button.upcoming-show-all-button:hover {
+    border-color: #E5C558;
+    background-color: transparent;
+    color: #E5C558;
+}
+
+.borderless-button.upcoming-show-all-button:before, .borderless-.upcoming-show-all-button:after {
+    border-color: transparent;
+}
+
+.borderless-button.upcoming-show-all-button:hover:before, .borderless-button.upcoming-show-all-button:hover:after {
+    width: calc(100% + 12px);
+    height: calc(100% + 12px);
+    border-color: #353535;
+}
+
 @media (max-width: 776px) {
+    /* Homecounter */
     .circle {
-      padding:0;
-      margin:0;
+        padding: 0;
+        margin: 0;
     }
-    .countercontainer{
-        top: 454px; 
+    .counter-container {
+        top: 454px;
     }
-    .banner-heading{
-        color:#FFFFFF;
+    /* HomemainComponent */
+    .banner-heading {
+        color: #FFFFFF;
         font-family: "Libre Baskerville";
         text-transform: capitalize;
         font-size: 66px;
         font-weight: 700;
         line-height: 46px;
         position: relative;
-        top:246px;
+        top: 246px;
         height: 96px;
         left: 0;
         width: auto;
         justify-content: Left;
         text-align: start;
     }
-    
-    .banner-content{
+    .banner-content {
         font-family: "Nunito";
         font-size: 22px;
         line-height: 32px;
@@ -114,5 +223,35 @@
         top: 200px;
         text-align: start;
     }
-
+    /* Upcoming shows */
+    .upcoming-showheading {
+        color: #FFFFFF;
+        margin-top: 124px;
+        margin-bottom: 0px;
+        height: 40px;
+        font-family: "Libre Baskerville";
+        font-weight: 400;
+        line-height: 40px;
+        font-size: 32px;
+        text-align: left;
+    }
+    
+.upcoming-show-all-button {
+    margin-top: 20px !important;
+    color: #E5C558;
+    background: transparent;
+    border-width: 2px;
+    border-style: solid;
+    border-color: transparent;
+    position: relative;
+    margin: 1em;
+    display: inline-block;
+    padding: 0.5em 1em;
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+    font-family: "Nunito";
+    font-weight: 400;
+    font-size: 16px;
+    float: none;
+}
 }

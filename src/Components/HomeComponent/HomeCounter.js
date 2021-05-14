@@ -42,10 +42,10 @@ class HomeCounter extends Component {
                       trailColor: "grey",
                     })}
                   >
-                    <div class="countertext">
+                    <div class="counter-text">
                       <i class="far fa-heart fa-lg" style={{ color: "#0259EB" }}></i>
                       <br />
-                      <span class="percentvalue">{this.state.percent}</span>
+                      <span class="percent-value">{this.state.percent}</span>
                       <br />
                       Label
                     </div>
@@ -63,10 +63,10 @@ class HomeCounter extends Component {
                       trailColor: "grey",
                     })}
                   >
-                    <div class="countertext">
+                    <div class="counter-text">
                     <i class="fas fa-calendar-day fa-lg"></i>
                       <br />
-                      <span class="percentvalue">{this.state.percentage}</span>
+                      <span class="percent-value">{this.state.percentage}</span>
                       <br />
                       Label
                     </div>
@@ -84,10 +84,10 @@ class HomeCounter extends Component {
                       trailColor: "grey",
                     })}
                   >
-                    <div class="countertext">
+                    <div class="counter-text">
                     <i class="fas fa-calendar-day fa-lg"></i>
                       <br />
-                      <span class="percentvalue">{this.state.percentage}</span>
+                      <span class="percent-value">{this.state.percentage}</span>
                       <br />
                       Label
                     </div>
@@ -105,10 +105,10 @@ class HomeCounter extends Component {
                       trailColor: "grey",
                     })}
                   >
-                    <div class="countertext">
+                    <div class="counter-text">
                     <i class="fas fa-calendar-day fa-lg"></i>
                       <br />
-                      <span class="percentvalue">{this.state.percentage}</span>
+                      <span class="percent-value">{this.state.percentage}</span>
                       <br />
                       Label
                     </div>
