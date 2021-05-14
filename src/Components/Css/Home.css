@@ -214,8 +214,7 @@
     position: relative;
 }
 
-
-.show-info-button{
+.show-info-button {
     margin-top: 0px !important;
     margin: 0px !important;
     padding: 0px;
@@ -224,7 +223,7 @@
     font-family: "nunito";
     font-size: 16px;
     line-height: 32px;
-    top:30px;
+    top: 30px;
     float: left;
     text-decoration: none;
     text-align: left;
@@ -248,10 +247,10 @@
     color: #0259EB;
 }
 
-.ticket-icon{
+.ticket-icon {
     position: relative;
     float: right;
-    top:30px;
+    top: 30px;
     text-align: end;
     max-width: fit-content;
     border-left: 1px solid;
@@ -260,18 +259,20 @@
 }
 
 /* Reviews */
+
 .avatar {
     vertical-align: middle;
-    width: 50px;
-    height: 50px;
+    width: 48px;
+    height: 48px;
     border-radius: 50%;
-  }
+    top: 44px;
+    left: 24px;
+    position: relative;
+}
 
-  .review-cards {
+.review-cards {
     padding: 0px;
     margin: 20px;
-    max-width: 360px;
-    height: 248px;
     border: 0.2rem solid #E5C558;
     background-color: #111229;
     border-radius: 16px;
@@ -279,6 +280,41 @@
     box-shadow: 10px -10px 1px -1px #276C73, 8px -10px 1px -1px #5293E8;
 }
 
+.review-name {
+    position: relative;
+    left: 0%;
+    top: 0%;
+    color: #FFFFFF;
+    font-family: "Quattrocento";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 32px;
+    align-items: center;
+}
+
+.review-location {
+    height: 16px;
+    left: 32px;
+    top: 4px;
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight:400 ;
+    font-size: 11px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: #E5C558;
+}
+
+.review-content{
+font-family: "nunito";
+font-size: 16px;
+text-align: left;
+vertical-align: top;
+opacity: 90%;
+line-height: 24px;
+font-weight: 400;
+}
 @media (max-width: 776px) {
     /* Homecounter */
     .circle {
@@ -350,29 +386,39 @@
         font-size: 16px;
         float: none;
     }
+    .show-info-button {
+        margin-top: 0px !important;
+        margin: 0px !important;
+        padding: 0px;
+        position: relative;
+        height: 32px;
+        font-family: "nunito";
+        font-size: 16px;
+        line-height: 32px;
+        top: 30px;
+        float: left;
+        text-decoration: none;
+        text-align: left;
+        color: #0259EB !important;
+    }
+    .ticket-icon {
+        position: relative;
+        float: right;
+        text-align: end;
+        max-width: fit-content;
+        border-left: 1px solid;
+    }
 
+    .review-cards {
+        padding: 0px;
+        margin: 0px;
+        margin-top: 20px;
+        width: 305px;
+        border: 0.2rem solid #E5C558;
+        background-color: #111229;
+        border-radius: 16px;
+        color: #FFFFFF;
+        box-shadow: 10px -10px 1px -1px #276C73, 8px -10px 1px -1px #5293E8;
+    }
     
-.show-info-button{
-    margin-top: 0px !important;
-    margin: 0px !important;
-    padding: 0px;
-    position: relative;
-    height: 32px;
-    font-family: "nunito";
-    font-size: 16px;
-    line-height: 32px;
-    top:30px;
-    float: left;
-    text-decoration: none;
-    text-align: left;
-    color: #0259EB !important;
-}
-
-.ticket-icon{
-    position: relative;
-    float: right;
-    text-align: end;
-    max-width: fit-content;
-    border-left: 1px solid;
-}
 }

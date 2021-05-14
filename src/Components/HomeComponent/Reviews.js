@@ -1,55 +1,54 @@
 import { Component, useState } from "react";
-import img1 from "../images/img1.png";
-import img2 from "../images/img2.png";
-import img3 from "../images/img3.png";
-import img4 from "../images/img4.png";
-import ticket from "../images/ticket.svg";
+import avatar1 from "../images/avatar1.png";
+import avatar2 from "../images/avatar2.png";
+import avatar3 from "../images/avatar3.png";
+import us from "../images/us.svg"
+import it from "../images/it.svg"
+// import avatar4 from "../images/avatar4.png";
 
 const Reviews = () => {
   const [Reviews] = useState([
     {
       id: 1,
-      title: "Folk",
-      name: "Benny Dayal",
-      info: "#",
-      ticket: "#",
-      image: img1,
+      location: "Palo Alto, CA",
+      name: "Hellen Jummy",
+      info: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae in donec in nisi vitae. Vestibulum pellentesque eget laoreet adipiscing",
+      image: avatar1,
+      flag:us,
     },
 
     {
       id: 2,
-      title: "Bollywood",
-      name: "Vijay Yesudas",
-      info: "#",
-      ticket: "#",
-      image: img2,
+      location: "Palo Alto, CA",
+      name: "Isaac Oluwatemilorun",
+      info: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae in donec in nisi vitae. Vestibulum pellentesque eget laoreet adipiscing",
+      image: avatar2,
+      flag:it,
     },
 
     {
       id: 3,
-      title: "Folk",
-      name: "Andrea Jeremiah",
-      info: "#",
-      ticket: "#",
-      image: img3,
+      location: "Palo Alto, CA",
+      name: "Hellen Jummy",
+      info: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae in donec in nisi vitae. Vestibulum pellentesque eget laoreet adipiscing",
+      image: avatar3,
+      flag:us,
     },
 
     {
       id: 4,
-      title: "Folk",
+      location: "Palo Alto, CA",
       name: "Shilpa Rao",
-      info: "#",
-      ticket: "#",
-      image: img4,
+      info: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae in donec in nisi vitae. Vestibulum pellentesque eget laoreet adipiscing",
+      image: avatar2,
+      flag:it,
     },
   ]);
 
   return (
     <div className=" container upcoming-shows">
       <div class="row">
-        <div class="col-sm-6 col-md-6 upcoming-show-heading">
-          Reviews
-        </div>
+        <div class="col-sm-6 col-md-6 upcoming-show-heading">Reviews</div>
         <div class="col-sm-6 col-md-6">
           <button
             type="button"
@@ -61,41 +60,15 @@ const Reviews = () => {
       </div>
 
       {/* Cards */}
-      <div id="container">
+      <div class="container">
         <div class="row">
           {Reviews.map((review) => (
             <div class="card col-md-3 col-sm-6 col-xs-12 review-cards">
-              <img
-                src={review.image}
-                class="card-img-top avatar"
-                alt="..."
-              />
-              <span class="badge bg-warning text-dark show-badge">
-                {review.title}
-              </span>
-              <span class="show-card-name">{review.name}</span>
+              <img src={review.image} class="avatar" alt="..." />
+              <span class="review-name">{review.name}</span>
+              <span class="review-location"><img src={review.flag} alt="flag" style={{marginRight:"10px"}}></img>{review.location}</span>
               <div class="card-body">
-                <div class="row">
-                  <div class="col-md-10 col">
-                    <a
-                      href={review.info}
-                      class=" btn upcoming-show-all-button borderless-button show-info-button"
-                    >
-                      More Info{" "}
-                      <span class="show-arrow">
-                        <i
-                          class="fas fa-arrow-right fa-lg"
-                          style={{ padding: "7px" }}
-                        ></i>
-                      </span>
-                    </a>
-                  </div>
-                  <div class="col-md-2 col-xs-4 col-sm-4 ticket-icon float-right">
-                    <a href="#">
-                      <img src={ticket} alt="book-ticket"></img>
-                    </a>
-                  </div>
-                </div>
+                <p class="review-content">{review.info}</p>
               </div>
             </div>
           ))}

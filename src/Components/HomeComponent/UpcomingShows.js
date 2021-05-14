@@ -61,7 +61,7 @@ const UpcomingShows = () => {
       </div>
 
       {/* Cards */}
-      <div id="container">
+      <div >
         <div class="row">
           {shows.map((show) => (
             <div class="card col-md-3 col-sm-6 col-xs-12 show-cards">
@@ -100,7 +100,7 @@ const UpcomingShows = () => {
                     </a>
                   </div>
                   <div class="col-md-2 col-xs-4 col-sm-4 ticket-icon float-right">
-                    <a href="#">
+                    <a href={show.ticket}>
                       <img src={ticket} alt="book-ticket"></img>
                     </a>
                   </div>
