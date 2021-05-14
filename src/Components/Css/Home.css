@@ -30,7 +30,7 @@
     font-size: 16px;
     font-weight: 400;
     line-height: 32px;
-    font:nunito;
+    font-family: "nunito";
 }
 
 .percentvalue{
@@ -38,9 +38,43 @@
     font-size: 24px;
     font-weight: 400;
     line-height: 32px;
-    font: Libre-Baskerville;
+    font-family: "Libre Baskerville";
 }
-@media (max-width: 658px) {
+
+.banner-heading{
+    color:#FFFFFF;
+    font-family: "Libre Baskerville";
+    text-transform: capitalize;
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 97%;
+    position: relative;
+    top:246px;
+    left: 151px;
+    width: 383px;
+    height: 96px;
+    justify-content: Left;
+    vertical-align: Center
+}
+
+.banner-content{
+    font-family: "Nunito";
+    font-size: 24px;
+    line-height: 32px;
+    justify-content: Left;
+    vertical-align: Top;
+    color: #FFFFFF;
+    opacity: 60%;
+    font-weight: 400;
+    position: relative;
+    width: 611px;
+    height: 64px;
+    top: 246px;
+    left: 180px;
+    text-align: start;
+}
+
+@media (max-width: 776px) {
     .circle {
       padding:0;
       margin:0;
@@ -48,4 +82,37 @@
     .countercontainer{
         top: 454px; 
     }
+    .banner-heading{
+        color:#FFFFFF;
+        font-family: "Libre Baskerville";
+        text-transform: capitalize;
+        font-size: 66px;
+        font-weight: 700;
+        line-height: 46px;
+        position: relative;
+        top:246px;
+        height: 96px;
+        left: 0;
+        width: auto;
+        justify-content: Left;
+        text-align: start;
+    }
+    
+    .banner-content{
+        font-family: "Nunito";
+        font-size: 22px;
+        line-height: 32px;
+        justify-content: Left;
+        vertical-align: Top;
+        color: #FFFFFF;
+        opacity: 60%;
+        font-weight: 400;
+        position: relative;
+        left: 0;
+        width: auto;
+        height: 64px;
+        top: 200px;
+        text-align: start;
+    }
+
 }
