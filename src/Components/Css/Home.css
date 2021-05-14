@@ -98,13 +98,6 @@
     border-radius: 16px;
 }
 
-/* 
-.upcoming-show-all-button{
-    color: #FFFFFF;
-    margin-top: 124px;
-    text-align: right;
-} */
-
 .upcoming-show-all-button {
     margin-top: 124px !important;
     color: #E5C558;
@@ -156,7 +149,7 @@
 }
 
 .upcoming-show-all-button:hover {
-    color: #353535;
+    color: #E5C558;
     background-color: #fff;
     border-color: #fff;
 }
@@ -179,7 +172,111 @@
 .borderless-button.upcoming-show-all-button:hover:before, .borderless-button.upcoming-show-all-button:hover:after {
     width: calc(100% + 12px);
     height: calc(100% + 12px);
-    border-color: #353535;
+    border-color: transparent;
+}
+
+.show-cards {
+    padding: 0px;
+    margin: 20px;
+    max-width: 286px;
+    height: 387px;
+    background-color: #111229;
+    border-radius: 8px;
+    color: #FFFFFF;
+    box-shadow: 10px -10px 1px -1px #301A68, 10px -10px 1px -1px #234C97;
+}
+
+.show-card-img {
+    max-height: 230px;
+    min-height: 230px;
+}
+
+.show-badge {
+    font-family: "Nunito";
+    max-width: fit-content;
+    font-size: 12px;
+    position: relative;
+    left: 16px;
+    top: 25px;
+    text-align: center;
+    border-radius: 1px;
+}
+
+.show-card-name {
+    font-family: "Libre Baskerville";
+    font-size: 20px;
+    line-height: 32px;
+    font-weight: 700;
+    text-align: left;
+    height: 32px;
+    top: 35px;
+    left: 16px;
+    position: relative;
+}
+
+
+.show-info-button{
+    margin-top: 0px !important;
+    margin: 0px !important;
+    padding: 0px;
+    position: relative;
+    height: 32px;
+    font-family: "nunito";
+    font-size: 16px;
+    line-height: 32px;
+    top:30px;
+    float: left;
+    text-decoration: none;
+    text-align: left;
+    color: #0259EB !important;
+}
+
+.show-info-button:hover {
+    color: #0259EB;
+    background-color: #fff;
+    border-color: #fff;
+}
+
+.show-info-button.upcoming-show-all-button {
+    border-color: transparent;
+    color: #0259EB;
+}
+
+.show-info-button.upcoming-show-all-button:hover {
+    border-color: #0259EB;
+    background-color: transparent;
+    color: #0259EB;
+}
+
+.ticket-icon{
+    position: relative;
+    float: right;
+    top:30px;
+    text-align: end;
+    max-width: fit-content;
+    border-left: 1px solid;
+    border-color: rgba(255, 255, 255, 0.2);
+    ;
+}
+
+/* Reviews */
+.avatar {
+    vertical-align: middle;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+
+  .review-cards {
+    padding: 0px;
+    margin: 20px;
+    max-width: 360px;
+    height: 248px;
+    border: 0.2rem solid #E5C558;
+    background-color: #111229;
+    border-radius: 16px;
+    color: #FFFFFF;
+    box-shadow: 10px -10px 1px -1px #276C73, 8px -10px 1px -1px #5293E8;
 }
 
 @media (max-width: 776px) {
@@ -235,23 +332,47 @@
         font-size: 32px;
         text-align: left;
     }
+    .upcoming-show-all-button {
+        margin-top: 20px !important;
+        color: #E5C558;
+        background: transparent;
+        border-width: 2px;
+        border-style: solid;
+        border-color: transparent;
+        position: relative;
+        margin: 1em;
+        display: inline-block;
+        padding: 0.5em 1em;
+        transition: all 0.3s ease-in-out;
+        text-align: center;
+        font-family: "Nunito";
+        font-weight: 400;
+        font-size: 16px;
+        float: none;
+    }
+
     
-.upcoming-show-all-button {
-    margin-top: 20px !important;
-    color: #E5C558;
-    background: transparent;
-    border-width: 2px;
-    border-style: solid;
-    border-color: transparent;
+.show-info-button{
+    margin-top: 0px !important;
+    margin: 0px !important;
+    padding: 0px;
     position: relative;
-    margin: 1em;
-    display: inline-block;
-    padding: 0.5em 1em;
-    transition: all 0.3s ease-in-out;
-    text-align: center;
-    font-family: "Nunito";
-    font-weight: 400;
+    height: 32px;
+    font-family: "nunito";
     font-size: 16px;
-    float: none;
+    line-height: 32px;
+    top:30px;
+    float: left;
+    text-decoration: none;
+    text-align: left;
+    color: #0259EB !important;
+}
+
+.ticket-icon{
+    position: relative;
+    float: right;
+    text-align: end;
+    max-width: fit-content;
+    border-left: 1px solid;
 }
 }
