@@ -35,14 +35,14 @@ const Reviews = () => {
       flag: us,
     },
 
-    {
-      id: 4,
-      location: "Palo Alto, CA",
-      name: "Shilpa Rao",
-      info: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae in donec in nisi vitae. Vestibulum pellentesque eget laoreet adipiscing",
-      image: avatar2,
-      flag: it,
-    },
+    // {
+    //   id: 4,
+    //   location: "Palo Alto, CA",
+    //   name: "Shilpa Rao",
+    //   info: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae in donec in nisi vitae. Vestibulum pellentesque eget laoreet adipiscing",
+    //   image: avatar2,
+    //   flag: it,
+    // },
   ]);
 
   return (

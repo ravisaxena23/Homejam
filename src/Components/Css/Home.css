@@ -272,7 +272,8 @@
 
 .review-cards {
     padding: 0px;
-    margin: 20px;
+    margin: 10px;
+    min-width: 360px;
     border: 0.2rem solid #E5C558;
     background-color: #0A0B1A;
     border-radius: 16px;
@@ -411,6 +412,7 @@ font-weight: 400;
 
     .review-cards {
         padding: 0px;
+        min-width: 300px;
         margin: 0px;
         margin-top: 20px;
         border: 0.2rem solid #E5C558;
@@ -419,5 +421,7 @@ font-weight: 400;
         color: #FFFFFF;
         box-shadow: 10px -10px 1px -1px #276C73, 8px -10px 1px -1px #5293E8;
     }
-    
+    .review-name{
+        left: 5px;
+    }
 }
