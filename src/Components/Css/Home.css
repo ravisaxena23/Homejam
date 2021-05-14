@@ -274,7 +274,7 @@
     padding: 0px;
     margin: 20px;
     border: 0.2rem solid #E5C558;
-    background-color: #111229;
+    background-color: #0A0B1A;
     border-radius: 16px;
     color: #FFFFFF;
     box-shadow: 10px -10px 1px -1px #276C73, 8px -10px 1px -1px #5293E8;
@@ -413,7 +413,6 @@ font-weight: 400;
         padding: 0px;
         margin: 0px;
         margin-top: 20px;
-        width: 305px;
         border: 0.2rem solid #E5C558;
         background-color: #111229;
         border-radius: 16px;

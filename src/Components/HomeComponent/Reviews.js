@@ -2,8 +2,8 @@ import { Component, useState } from "react";
 import avatar1 from "../images/avatar1.png";
 import avatar2 from "../images/avatar2.png";
 import avatar3 from "../images/avatar3.png";
-import us from "../images/us.svg"
-import it from "../images/it.svg"
+import us from "../images/us.svg";
+import it from "../images/it.svg";
 // import avatar4 from "../images/avatar4.png";
 
 const Reviews = () => {
@@ -14,7 +14,7 @@ const Reviews = () => {
       name: "Hellen Jummy",
       info: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae in donec in nisi vitae. Vestibulum pellentesque eget laoreet adipiscing",
       image: avatar1,
-      flag:us,
+      flag: us,
     },
 
     {
@@ -23,7 +23,7 @@ const Reviews = () => {
       name: "Isaac Oluwatemilorun",
       info: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae in donec in nisi vitae. Vestibulum pellentesque eget laoreet adipiscing",
       image: avatar2,
-      flag:it,
+      flag: it,
     },
 
     {
@@ -32,7 +32,7 @@ const Reviews = () => {
       name: "Hellen Jummy",
       info: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae in donec in nisi vitae. Vestibulum pellentesque eget laoreet adipiscing",
       image: avatar3,
-      flag:us,
+      flag: us,
     },
 
     {
@@ -41,12 +41,12 @@ const Reviews = () => {
       name: "Shilpa Rao",
       info: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae in donec in nisi vitae. Vestibulum pellentesque eget laoreet adipiscing",
       image: avatar2,
-      flag:it,
+      flag: it,
     },
   ]);
 
   return (
-    <div className=" container upcoming-shows">
+    <div className=" container">
       <div class="row">
         <div class="col-sm-6 col-md-6 upcoming-show-heading">Reviews</div>
         <div class="col-sm-6 col-md-6">
@@ -61,12 +61,19 @@ const Reviews = () => {
 
       {/* Cards */}
       <div class="container">
-        <div class="row" style={{marginTop:"20px"}}>
+        <div class="row" style={{ marginTop: "20px" }}>
           {Reviews.map((review) => (
-            <div class="card col-md-3 col-sm-6 col-xs-12 review-cards"  style={{marginBottom:"10px"}}>
+            <div class="card col review-cards" style={{ marginBottom: "10px" }}>
               <img src={review.image} class="avatar" alt="..." />
               <span class="review-name">{review.name}</span>
-              <span class="review-location"><img src={review.flag} alt="flag" style={{marginRight:"10px"}}></img>{review.location}</span>
+              <span class="review-location">
+                <img
+                  src={review.flag}
+                  alt="flag"
+                  style={{ marginRight: "10px" }}
+                ></img>
+                {review.location}
+              </span>
               <div class="card-body">
                 <p class="review-content">{review.info}</p>
               </div>
