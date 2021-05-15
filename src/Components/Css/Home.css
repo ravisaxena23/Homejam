@@ -183,7 +183,7 @@
     background-color: #111229;
     border-radius: 8px;
     color: #FFFFFF;
-    box-shadow: 10px -10px 1px -1px rgba(48, 26, 104, 65%), 10px -10px 1px -1px rgba(35, 76, 151, 1);
+    box-shadow: 10px -10px 1px -1px rgba(48, 26, 104, 53%), 10px -10px 1px -1px rgba(35, 76, 151, 80%);
 }
 
 .show-card-img {
@@ -277,7 +277,7 @@
     background-color: #0A0B1A;
     border-radius: 16px;
     color: #FFFFFF;
-    box-shadow: 10px -10px 1px -1px rgba(39, 108, 115, 0.8), 10px -10px 1px -1px rgba(82, 147, 232, 1);
+    box-shadow: 10px -10px 1px -1px rgba(39, 108, 115, 53%), 10px -10px 1px -1px rgba(82, 147, 232, 80%);
 }
 
 .review-name {
@@ -478,7 +478,7 @@
         background-color: #111229;
         border-radius: 16px;
         color: #FFFFFF;
-        box-shadow: 10px -10px 1px -1px rgba(39, 108, 115, 0.8), 10px -10px 1px -1px rgba(82, 147, 232, 1);
+        box-shadow: 10px -10px 1px -1px rgba(39, 108, 115, 53%), 10px -10px 1px -1px rgba(82, 147, 232, 80%);
     }
     /* review pagination */
     .pagination-box {
