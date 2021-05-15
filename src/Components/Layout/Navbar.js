@@ -2,11 +2,22 @@ import Logo from "../images/logo.png";
 import "../Css/Navbar.css";
 
 export default function Navbar(params) {
+  function handleClick(e) {
+    e.preventDefault();
+    console.log("this is", this);
+    window.confirm(
+      "In Progress. You Can cutomize as per you need. My github Name: RaviSaxena23"
+    );
+  }
   return (
     <nav class="navbar navbar-expand-lg fixed-top">
       <div class="container-fluid">
         {/* large screen */}
-        <a class="navbar-brand d-none d-sm-none d-md-block" href="#">
+        <a
+          class="navbar-brand d-none d-sm-none d-md-block"
+          href="#"
+          onClick={handleClick}
+        >
           <img
             src={Logo}
             alt="Logo"
@@ -17,7 +28,11 @@ export default function Navbar(params) {
         </a>
 
         {/* mobile screen */}
-        <a class="navbar-brand d-xs-block d-sm-block d-md-none" href="#">
+        <a
+          class="navbar-brand d-xs-block d-sm-block d-md-none"
+          href="#"
+          onClick={handleClick}
+        >
           <img src={Logo} alt="Logo" width="86" height="44"></img>
         </a>
         <div class="search d-xs-block d-sm-block d-md-none">
@@ -35,6 +50,7 @@ export default function Navbar(params) {
           class="nav-link d-xs-block d-sm-block d-md-none"
           href="#"
           style={{ color: "#fafafa" }}
+          onClick={handleClick}
         >
           <svg
             width="14"
@@ -77,15 +93,25 @@ export default function Navbar(params) {
               name=""
               placeholder="Type to search for something"
             />
-            <a href="#" class="search__button">
+            <a href="#" class="search__button" onClick={handleClick}>
               <i class="fas fa-search"></i>
             </a>
           </div>
           <div class="navbar-nav">
-            <a class="nav-link" href="#" style={{ color: "#fafafa" }}>
+            <a
+              class="nav-link"
+              href="#"
+              style={{ color: "#fafafa" }}
+              onClick={handleClick}
+            >
               Help
             </a>
-            <a class="nav-link" href="#" style={{ color: "#fafafa" }}>
+            <a
+              class="nav-link"
+              href="#"
+              style={{ color: "#fafafa" }}
+              onClick={handleClick}
+            >
               Account
             </a>
           </div>
@@ -95,6 +121,7 @@ export default function Navbar(params) {
           class="nav-link d-none d-sm-none d-md-block"
           href="#"
           style={{ color: "#fafafa", marginRight: "54px" }}
+          onClick={handleClick}
         >
           <svg
             width="14"

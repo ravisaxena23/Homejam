@@ -44,6 +44,14 @@ const UpcomingShows = () => {
     },
   ]);
 
+  function handleClick(e) {
+    e.preventDefault();
+    console.log("this is", this);
+    window.confirm(
+      "In Progress. You Can cutomize as per you need. My github Name: RaviSaxena23"
+    );
+  }
+
   return (
     <div className=" container upcoming-shows">
       <div class="row">
@@ -54,6 +62,7 @@ const UpcomingShows = () => {
           <button
             type="button"
             class="upcoming-show-all-button borderless-button float-right"
+            onClick={handleClick}
           >
             View All
           </button>
@@ -80,6 +89,7 @@ const UpcomingShows = () => {
                     <a
                       href={show.info}
                       class=" btn upcoming-show-all-button borderless-button show-info-button"
+                      onClick={handleClick}
                     >
                       More Info{" "}
                       <span class="show-arrow">
@@ -100,7 +110,7 @@ const UpcomingShows = () => {
                     </a>
                   </div>
                   <div class="col-md-2 col-xs-4 col-sm-4 ticket-icon float-right">
-                    <a href={show.ticket}>
+                    <a href={show.ticket} onClick={handleClick}>
                       <img src={ticket} alt="book-ticket"></img>
                     </a>
                   </div>
