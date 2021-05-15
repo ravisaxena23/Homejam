@@ -95,7 +95,10 @@ const Reviews = () => {
             disabledClassName={"pagination__link--disabled"}
             activeClassName={"pagination__link--active"}
           />
-            <div className="show-page-count">{currentPage+1}<spam style={{color:"grey"}}>/{pageCount}</spam></div>
+          <div className="show-page-count">
+            {currentPage + 1}
+            <spam style={{ color: "grey" }}>/{pageCount}</spam>
+          </div>
         </div>
       </div>
 

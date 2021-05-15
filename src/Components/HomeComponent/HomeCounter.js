@@ -10,7 +10,7 @@ import "react-circular-progressbar/dist/styles.css";
 
 function Example(props) {
   return (
-    <div style={{margin:"10px"}}>
+    <div style={{ margin: "10px" }}>
       <div>{props.children}</div>
       <p>{props.description}</p>
     </div>

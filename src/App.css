@@ -1,7 +1,7 @@
 .App {
   text-align: center;
-  background: #0A0B1A;
-  background-blend-mode:darken;
+  background-blend-mode: darken;
+  margin-bottom: 60px;
 }
 
 .App-logo {

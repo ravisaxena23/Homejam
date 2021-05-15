@@ -14,11 +14,11 @@ class Home extends Component {
         <section id="1">
           <div class="banner">
             <div className="container">
-            <p className="banner-heading">cari cari</p>
-            <p className="banner-content" >
-              Live from their sofa to yours. Get closer to your favorite
-              artists, and never miss out.
-            </p>
+              <p className="banner-heading">cari cari</p>
+              <p className="banner-content">
+                Live from their sofa to yours. Get closer to your favorite
+                artists, and never miss out.
+              </p>
             </div>
             <HomeCounter />
           </div>

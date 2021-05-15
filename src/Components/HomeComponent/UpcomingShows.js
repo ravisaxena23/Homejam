@@ -61,7 +61,7 @@ const UpcomingShows = () => {
       </div>
 
       {/* Cards */}
-      <div >
+      <div>
         <div class="row">
           {shows.map((show) => (
             <div class="card col-md-3 col-sm-6 col-xs-12 show-cards">
@@ -89,7 +89,7 @@ const UpcomingShows = () => {
                           viewBox="0 0 24 24"
                           fill="none"
                           xmlns="http://www.w3.org/2000/svg"
-                          style={{marginTop:"-1px",marginLeft:"10px"}}
+                          style={{ marginTop: "-1px", marginLeft: "10px" }}
                         >
                           <path
                             d="M14.25 5.25L13.2 6.3L18.075 11.25H2.25V12.75H18.075L13.2 17.7L14.25 18.75L21 12L14.25 5.25Z"

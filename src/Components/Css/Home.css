@@ -183,7 +183,7 @@
     background-color: #111229;
     border-radius: 8px;
     color: #FFFFFF;
-    box-shadow: 10px -10px 1px -1px rgba(48, 26, 104, 65%),10px -10px 1px -1px rgba(35, 76, 151, 1);
+    box-shadow: 10px -10px 1px -1px rgba(48, 26, 104, 65%), 10px -10px 1px -1px rgba(35, 76, 151, 1);
 }
 
 .show-card-img {
@@ -277,7 +277,7 @@
     background-color: #0A0B1A;
     border-radius: 16px;
     color: #FFFFFF;
-    box-shadow: 10px -10px 1px -1px rgba(39, 108, 115, 0.8),10px -10px 1px -1px rgba(82, 147, 232, 1);
+    box-shadow: 10px -10px 1px -1px rgba(39, 108, 115, 0.8), 10px -10px 1px -1px rgba(82, 147, 232, 1);
 }
 
 .review-name {
@@ -299,25 +299,26 @@
     top: 4px;
     font-family: "Rubik";
     font-style: normal;
-    font-weight:400 ;
+    font-weight: 400;
     font-size: 11px;
     line-height: 16px;
     text-transform: uppercase;
     color: #E5C558;
 }
 
-.review-content{
-font-family: "nunito";
-font-size: 16px;
-text-align: left;
-vertical-align: top;
-opacity: 90%;
-line-height: 24px;
-font-weight: 400;
+.review-content {
+    font-family: "nunito";
+    font-size: 16px;
+    text-align: left;
+    vertical-align: top;
+    opacity: 90%;
+    line-height: 24px;
+    font-weight: 400;
 }
 
 /* review pagination */
-.pagination-box{    
+
+.pagination-box {
     color: #FFFFFF;
     margin-top: 127px;
     margin-bottom: 12px;
@@ -328,30 +329,31 @@ font-weight: 400;
     position: relative;
     text-align: left;
 }
+
 .pagination {
     display: flex;
     justify-content: flex-end;
     list-style: none;
-    cursor: pointer; 
+    cursor: pointer;
     color: #FFFFFF;
-  }
-  
-  .pagination a {
+}
+
+.pagination a {
     padding: 5px;
     color: grey !important;
-  }
-  
-  .pagination li {
+}
+
+.pagination li {
     color: #FFFFFF;
     display: none;
-  }
+}
 
-  .pagination__link {
+.pagination__link {
     font-weight: bold;
     color: #FFFFFF;
+}
 
-  }
-.show-page-count{
+.show-page-count {
     font-size: "nunito";
     font-size: 16px;
     font-weight: 700;
@@ -359,21 +361,21 @@ font-weight: 400;
     float: right;
     top: -53px;
     right: 74px;
-    
 }
-  .rami{
-      display: block !important;
-  }
-  
-  .pagination__link--active a {
+
+.rami {
+    display: block !important;
+}
+
+.pagination__link--active a {
     color: #000;
     background: #000;
-  }
-  
-  .pagination__link--disabled a {
+}
+
+.pagination__link--disabled a {
     color: rgb(198, 197, 202);
-  }
-  
+}
+
 @media (max-width: 776px) {
     /* Homecounter */
     .circle {
@@ -467,7 +469,6 @@ font-weight: 400;
         max-width: fit-content;
         border-left: 1px solid;
     }
-
     .review-cards {
         padding: 0px;
         /* margin: 0px; */
@@ -477,11 +478,10 @@ font-weight: 400;
         background-color: #111229;
         border-radius: 16px;
         color: #FFFFFF;
-        box-shadow: 10px -10px 1px -1px rgba(39, 108, 115, 0.8),10px -10px 1px -1px rgba(82, 147, 232, 1);
+        box-shadow: 10px -10px 1px -1px rgba(39, 108, 115, 0.8), 10px -10px 1px -1px rgba(82, 147, 232, 1);
     }
-
     /* review pagination */
-    .pagination-box{    
+    .pagination-box {
         color: #FFFFFF;
         margin-top: -52px;
         margin-bottom: 12px;
@@ -492,20 +492,18 @@ font-weight: 400;
         position: relative;
         text-align: left;
     }
-
     .pagination {
         display: flex;
         justify-content: flex-end;
         list-style: none;
-        cursor: pointer; 
+        cursor: pointer;
         color: #FFFFFF;
-      }
-    
+    }
 }
 
 @media only screen and (min-width: 578px) and (max-width: 768px) {
     /* review pagination */
-    .pagination-box{    
+    .pagination-box {
         color: #FFFFFF;
         margin-top: 110px;
         margin-bottom: 12px;
@@ -516,13 +514,11 @@ font-weight: 400;
         position: relative;
         text-align: left;
     }
-
     .pagination {
         display: flex;
         justify-content: flex-end;
         list-style: none;
-        cursor: pointer; 
+        cursor: pointer;
         color: #FFFFFF;
-      }
-
+    }
 }
