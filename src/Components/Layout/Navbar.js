@@ -13,11 +13,7 @@ export default function Navbar(params) {
     <nav class="navbar navbar-expand-lg fixed-top">
       <div class="container-fluid">
         {/* large screen */}
-        <a
-          class="navbar-brand d-none d-sm-none d-md-block"
-          href="#"
-          onClick={handleClick}
-        >
+        <a class="navbar-brand d-none d-sm-none d-md-block" href="#">
           <img
             src={Logo}
             alt="Logo"
